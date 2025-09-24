@@ -1,7 +1,7 @@
 # 📝 ToDo Web (Frontend)
 
 Frontend web para o sistema **ToDo List**, desenvolvido em **React (Vite)** e integrado ao backend em **Node.js + Express + PostgreSQL**.  
-Este projeto foi criado para praticar desenvolvimento frontend moderno, seguindo boas práticas de organização de pastas e integração com APIs REST.
+Este projeto foi criado para praticar desenvolvimento frontend moderno, seguindo boas práticas de **UI/UX**, organização de pastas e integração com APIs REST.
 
 ---
 
@@ -10,6 +10,7 @@ Este projeto foi criado para praticar desenvolvimento frontend moderno, seguindo
 - [Vite](https://vitejs.dev/)  
 - [Axios](https://axios-http.com/) – requisições HTTP  
 - [React Icons](https://react-icons.github.io/react-icons/) – ícones prontos  
+- [Tailwind CSS](https://tailwindcss.com/) – estilização moderna e responsiva  
 
 ---
 
@@ -20,6 +21,7 @@ todo-web/
   ├── src/
   │   ├── api/           # funções para comunicação com o backend
   │   ├── components/    # componentes reutilizáveis (TodoItem, etc.)
+  │   ├── hooks/         # hooks customizados (ex: useTodos)
   │   ├── pages/         # páginas principais (Home, etc.)
   │   ├── App.jsx        # ponto inicial da aplicação
   │   └── main.jsx       # renderização do React no DOM
@@ -60,17 +62,22 @@ todo-web/
 - ➕ Criar nova tarefa  
 - 📃 Listar tarefas existentes  
 - ✅ Concluir/Desmarcar tarefa  
-- ✏️ Editar título da tarefa  
-- 🗑️ Deletar tarefa  
+- ✏️ Editar título da tarefa (edição inline)  
+- 🗑️ Deletar tarefa (com confirmação)  
+- 🌙 **Dark Mode** (segue o sistema, mas o usuário pode alternar manualmente)  
+- ⏳ **Spinner de loading** durante requisições  
+- 🚫 **Empty state** quando não há tarefas  
 
 ---
 
 ## 🛠️ Boas práticas aplicadas
 
-- Separação de responsabilidades (**components**, **pages**, **api**)  
-- Uso de **hooks** (`useState`, `useEffect`)  
+- Separação de responsabilidades (**components**, **pages**, **api**, **hooks**)  
+- Uso de **hooks do React** (`useState`, `useEffect`)  
 - Consumo de API com Axios  
-- Componentização (`TodoItem`) para facilitar manutenção  
+- Estilização com **Tailwind CSS** (design moderno e responsivo)  
+- Feedback visual ao usuário (loading, animações, mensagens de erro/vazio)  
+- Dark mode com persistência de preferência (sistema + usuário)  
 
 ---
 
